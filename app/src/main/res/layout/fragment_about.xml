@@ -14,17 +14,18 @@
   ~ limitations under the License.
   -->
 
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fillViewport="true"
-    tools:context="com.example.android.navigation.AboutFragment">
-
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:fillViewport="true"-->
+<!--    tools:context="com.example.android.navigation.AboutFragment">-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/aboutImage"
@@ -37,7 +38,23 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/about_android_trivia" />
-
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/button_text_size"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_bias="0.498"
+            android:layout_marginStart="@dimen/horizontal_margin"
+            android:layout_marginEnd="@dimen/horizontal_margin"
+            android:paddingStart="@dimen/button_padding"
+            android:paddingEnd="@dimen/button_padding"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rulesText" />
         <TextView
             android:id="@+id/rulesText"
             android:layout_width="0dp"
@@ -52,4 +69,52 @@
             app:layout_constraintTop_toBottomOf="@+id/aboutImage" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
+<!--</ScrollView>-->
+    </layout>
+<!--<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/aboutImage"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="@dimen/image_header_height"-->
+<!--        app:layout_constraintBottom_toTopOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/about_android_trivia" />-->
+<!--    <Button-->
+<!--        android:id="@+id/playButton"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Button"-->
+<!--        android:textColor="@color/colorAccent"-->
+<!--        android:textSize="@dimen/button_text_size"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintHorizontal_bias="0.498"-->
+<!--        android:layout_marginStart="@dimen/horizontal_margin"-->
+<!--        android:layout_marginEnd="@dimen/horizontal_margin"-->
+<!--        android:paddingStart="@dimen/button_padding"-->
+<!--        android:paddingEnd="@dimen/button_padding"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/rulesText" />-->
+<!--        &lt;!&ndash;            <TextView&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:id="@+id/rulesText"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:layout_marginStart="@dimen/horizontal_margin"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:layout_marginTop="@dimen/vertical_margin"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:layout_marginEnd="@dimen/horizontal_margin"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:text="@string/about_text"&ndash;&gt;-->
+<!--        &lt;!&ndash;                android:textAppearance="@style/TextAppearance.AppCompat.Large"&ndash;&gt;-->
+<!--        &lt;!&ndash;                app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;                app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;                app:layout_constraintTop_toBottomOf="@+id/aboutImage" />&ndash;&gt;-->
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--</layout>-->

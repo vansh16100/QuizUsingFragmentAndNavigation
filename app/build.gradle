@@ -24,7 +24,7 @@ android {
     compileSdkVersion 30
     defaultConfig {
         applicationId 'com.example.android.navigation'
-        minSdkVersion 19
+        minSdkVersion 24
         targetSdkVersion 30
         vectorDrawables.useSupportLibrary = true
         versionCode 1
@@ -46,13 +46,14 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    implementation "com.google.android.material:material:$version"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation "com.google.android.material:material:1.4.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.5.20"
+
     implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$supportlibVersion"
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "com.google.android.material:material:1.2.1"
     implementation "androidx.navigation:navigation-fragment-ktx:$navigationVersion"
     implementation "androidx.navigation:navigation-ui-ktx:$navigationVersion"
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
 }

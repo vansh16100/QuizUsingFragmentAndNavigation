@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
         val navController : NavController = this.findNavController(R.id.myNavHostFragment)
         drawerLayout = binding.drawerLayout
         NavigationUI.setupActionBarWithNavController(this,navController,drawerLayout)
-//        NavigationUI.setupWithNavController(binding.navView,navController)
+        NavigationUI.setupWithNavController(binding.navView,navController)
 //        navController.navigateUp()
     }
 

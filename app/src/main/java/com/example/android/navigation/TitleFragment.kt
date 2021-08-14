@@ -2,13 +2,11 @@ package com.example.android.navigation
 
 import android.os.Bundle
 import android.view.*
-import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.Navigation
+import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import com.example.android.navigation.databinding.FragmentTitleBinding
-import java.util.zip.Inflater
 
 class TitleFragment : Fragment() {
     // TODO: Rename and change types of parameters
@@ -19,6 +17,12 @@ class TitleFragment : Fragment() {
             it.findNavController().navigate(R.id.action_titleFragment3_to_gameFragment2);
         }
         setHasOptionsMenu(true)
+        binding.aboutButton.setOnClickListener{
+            it.findNavController().navigate(R.id.action_titleFragment3_to_aboutFragment)
+        }
+        binding.ruleButton.setOnClickListener {
+            it.findNavController().navigate(R.id.action_titleFragment3_to_rulesFragment)
+        }
         return binding.root
     }
 
